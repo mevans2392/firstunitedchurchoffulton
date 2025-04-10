@@ -1,0 +1,40 @@
+/* color scheme will be:
+    Background: light gray: #F4F4F4
+    Primary Text: slate gray: #2E2E2E
+    Accent: Teal: #008080
+            slightly darker teal: #006666
+    Call to Action: Warm Coral: #F96167
+    Button hovor: Dark Coral: #d6474f
+    Link Color: teal or coral: #008080 or F96167
+*/
+
+body {
+    font-family: 'EB Garamond', Garamond, serif;
+}
+
+.btn-primary {
+    background-color: #008080;
+    border-color: #008080;
+    color: #2E2E2E;
+}
+.btn-primary:hover {
+    background-color: #006666;
+    border-color: #006666;
+}
+.btn-accent {
+    background-color: #F96167;
+    color: #2E2E2E !important;
+    border: none;
+}
+.btn-accent:hover {
+    background-color: #d6474f;
+    color: white !important;
+}
+.navbar-custom {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.navbar-custom .btn + .btn {
+    margin-left: 0.5rem;
+}
