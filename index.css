@@ -1,0 +1,38 @@
+#hero {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #B8860B;
+}
+#worshipTimes {
+    text-align: right;
+}
+#liveStreamContainer {
+    height: 405px;
+}
+#stream {
+    border-bottom: 3px solid #B8860B;
+    padding-bottom: 2rem;
+}
+
+@media(max-width: 600px) {
+    /* */
+    #heroImage {
+        text-align: center;
+    }
+    #heroText {
+        padding-top: 1rem;
+    }
+    #worshipTimes {
+        text-align: left;
+        margin-top: .5rem;
+    }
+    #liveStreamContainer {
+        width: 100%;
+        max-height: 200px;
+    }
+    footer {
+        font-size: .75em;
+    }
+    footer h3 {
+        font-size: 1.5em;
+    }
+}

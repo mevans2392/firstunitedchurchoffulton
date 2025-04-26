@@ -26,4 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error loading scripture:', error);
         chapVerseEl.textContent = "Oops, something went wrong.";
       });
+
+    fetch('embed.json')
+      .then(res => res.json())
+      .then(data => {
+        const latest = data[0];
+        const container = document.getElementById('liveStreamContainer');
+        container.innerHTML = latest.embed;
+
+        const iframe = container.querySelector('iframe');
+        if(iframe) {
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.maxWidth = "720px";
+          iframe.style.maxheight = "500px";
+        }
+      });
+
+
 });

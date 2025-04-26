@@ -1,0 +1,29 @@
+img {
+    width: 60%;
+    height: auto;
+}
+#pic {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#personTwo, #personFour {
+    display: flex;
+}
+
+#info {
+    order: 2;
+}
+
+#personTwo #pic, #personFour #pic {
+    order: 1;
+}
+
+@media(max-width: 600px) {
+    #info {
+        order: 1;
+    }
+    #pic {
+        order: 2;
+    }
+}
