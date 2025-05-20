@@ -12,7 +12,7 @@
 
   @media(max-width: 600px) {
     #liveStreamContainer {
-        max-height: 200px;
+        max-height: 300px;
     }
   }
   

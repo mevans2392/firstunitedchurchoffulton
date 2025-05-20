@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chapVerseEl.textContent = "Oops, something went wrong.";
       });
 
-    fetch('embed.json')
+    fetch('livestreams.json')
       .then(res => res.json())
       .then(data => {
         const latest = data[0];
@@ -43,5 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
+      const goalAmount = 50000;
+      currentAmount = 0;
+
+      fetch('amount.json')
+        .then(res => res.json())
+        .then(data => {
+          currentAmount = data.amount;
+          updateProgressBar(currentAmount, goalAmount);
+        });
+
+      function updateProgressBar(current, goal) {
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+
+        const percent = Math.min((current / goal) * 100, 100);
+        progressBar.style.width = percent + '%';
+        progressText.textContent = `$${current.toLocaleString()} raised of $${goal.toLocaleString()} goal (${percent.toFixed(1)}%)`;
+      }
 
 });

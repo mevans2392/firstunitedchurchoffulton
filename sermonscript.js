@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('embed.json')
+  fetch('livestreams.json')
     .then(res => res.json())
     .then(data => {
       if (!data || data.length === 0) return;

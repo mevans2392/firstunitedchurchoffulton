@@ -13,6 +13,33 @@
     padding-bottom: 2rem;
 }
 
+#fundraiser {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+#progressBarContainer {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #B8860B;
+    height: 30px;
+    margin-top: 20px;
+}
+#progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #B8860B;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    transition: width 0.5s ease;
+}
+#progressText {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
 @media(max-width: 600px) {
     /* */
     #heroImage {
