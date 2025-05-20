@@ -1,0 +1,20 @@
+#liveStreamContainer {
+    height: 500px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#pastStreamsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+  }
+
+  @media(max-width: 600px) {
+    #liveStreamContainer {
+        max-height: 300px;
+    }
+  }
+  
+  
+  
